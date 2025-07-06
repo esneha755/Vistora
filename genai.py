@@ -4,10 +4,8 @@ import json
 from PIL import Image
 import io
 
-API_KEY = st.secrets["openai_api_key"]
-headers = {
-    "Authorization": f"Bearer {API_KEY}",
-    "Content-Type": "application/json"
+# Hidden API key 
+API_KEY = "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"
 }
 # Initialize session state
 if 'page' not in st.session_state:
