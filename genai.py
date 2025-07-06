@@ -5,7 +5,10 @@ from PIL import Image
 import io
 
 API_KEY = st.secrets["openai_api_key"]
-
+headers = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+}
 # Initialize session state
 if 'page' not in st.session_state:
     st.session_state.page = 'home'
