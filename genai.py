@@ -3,7 +3,6 @@ import requests
 import json
 from PIL import Image
 import io
-from dotenv import load_dotenv
 # Hidden API key
 API_KEY = st.secrets["OPENAI_API_KEY"]
 # Initialize session state
