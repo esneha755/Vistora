@@ -4,14 +4,9 @@ import json
 from PIL import Image
 import io
 import zipfile
-from dotenv import load_dotenv
-import os
 
-# Load environment variables from .env file
-load_dotenv()
 
-# Hidden API key
-API_KEY = os.getenv("OPEN_API_KEY")
+API_KEY = st.secrets["OPEN_API_KEY"]
 # Initialize session state
 if 'page' not in st.session_state:
     st.session_state.page = 'home'
